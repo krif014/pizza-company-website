@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Krif's Pizza Company</title>
+
+  <!-- Font Awesome for social icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    :root{--orange:#e67e22;--orange-dark:#cf711f}
+    html{scroll-behavior:smooth;scroll-padding-top:90px}
+    *{box-sizing:border-box}
+    body{font-family:Arial,Helvetica,sans-serif;margin:0;color:#222;line-height:1.6}
+    /* Header */
+    header{position:fixed;top:0;left:0;width:100%;background:rgba(255,255,255,0.9);box-shadow:0 2px 8px rgba(0,0,0,0.08);z-index:1200}
+    .nav-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:14px}
+    .logo{font-weight:700;color:var(--orange);font-size:1.2rem}
+    nav ul{display:flex;gap:10px;list-style:none;margin:0;padding:0}
+    nav a{display:inline-block;padding:8px 14px;border-radius:8px;background:var(--orange);color:#fff;text-decoration:none;font-weight:600;transition:transform .18s ease,background .18s}
+    nav a:hover{background:var(--orange-dark);transform:translateY(-2px)}
+
+    /* Hero */
+    .hero{height:100vh;background:url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;display:flex;align-items:center;justify-content:flex-start;padding-left:6%;position:relative}
+    .hero::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg, rgba(0,0,0,0.45), rgba(0,0,0,0.35))}
+    .hero-content{position:relative;z-index:2;color:#fff;max-width:680px}
+    .hero h1{font-size:3rem;margin-bottom:12px}
+    .hero p{font-size:1.15rem;margin-bottom:18px}
+    .btn{background:var(--orange);color:#fff;padding:10px 18px;border-radius:8px;text-decoration:none;font-weight:700;display:inline-block;transition:transform .18s,background .18s}
+    .btn:hover{background:var(--orange-dark);transform:translateY(-3px)}
+
+    /* Sections */
+    main{max-width:1200px;margin:0 auto;padding-top:20px}
+    section{padding:70px 20px}
+    section h2{color:var(--orange);margin-bottom:12px;font-size:1.8rem}
+    .section-content{max-width:75%;text-align:left}
+
+    /* Menu */
+    .menu-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+    .menu-item{background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 6px 18px rgba(0,0,0,0.08);display:flex;flex-direction:column}
+    .menu-item img{width:100%;height:190px;object-fit:cover;display:block;transition:transform .25s}
+    .menu-item:hover img{transform:scale(1.04)}
+    .menu-item .mi-body{padding:12px 14px;flex:1;display:flex;flex-direction:column;justify-content:space-between}
+    .menu-item p{margin:0 0 12px;font-weight:600;color:#333}
+    .menu-item .order-btn{align-self:flex-start;background:var(--orange);color:#fff;padding:8px 12px;border-radius:8px;text-decoration:none;font-weight:700;border:none;cursor:pointer;transition:transform .18s}
+    .menu-item .order-btn:hover{transform:translateY(-3px);background:var(--orange-dark)} 
+
+    /* Form */
+    .order-form{max-width:560px;background:#fff;padding:18px;border-radius:10px;box-shadow:0 6px 20px rgba(0,0,0,0.06)}
+    .order-form label{font-size:0.9rem;margin-bottom:6px;display:block}
+    .order-form input,.order-form textarea,.order-form select{width:100%;padding:10px;border:1px solid #ddd;border-radius:8px;margin-bottom:12px}
+    .order-form button{background:var(--orange);color:#fff;padding:10px 16px;border-radius:8px;border:none;cursor:pointer;font-weight:700}
+    .order-form button:hover{background:var(--orange-dark)}
+
+    /* Contact & Social */
+    .contact-info{flex:1;min-width:260px}
+    .social-icons{display:flex;justify-content:flex-start;gap:16px;margin-top:18px}
+    .social-icons a{font-size:28px;color:var(--orange);transition:transform .25s,color .25s,text-shadow .25s}
+    .social-icons a:hover{color:#fff;transform:scale(1.3) rotate(6deg);text-shadow:0 0 10px var(--orange),0 0 20px var(--orange)}
+
+    /* Footer */
+    footer{background:#111;color:#fff;padding:18px;text-align:center}
+
+    /* Responsive tweaks */
+    @media (max-width:900px){.hero h1{font-size:2.2rem}.section-content{max-width:100%}.hero{padding-left:4%}.nav-inner{padding:10px}}
+    @media (max-width:600px){nav ul{gap:6px;flex-wrap:wrap}nav a{padding:6px 10px}}
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="nav-inner">
+      <div class="logo">Krif's Pizza</div>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#vision">Our Vision</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#order">Order</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h1>Krif's Pizza Company</h1>
+      <p>Hot, fresh & delicious pizzas — handcrafted with care.</p>
+      <a class="btn" href="#order">Order Now</a>
+    </div>
+  </section>
+
+  <main>
+    <section id="vision">
+      <h2>Our Vision</h2>
+      <div class="section-content">
+        <p>At Krif's Pizza Company, our vision is to bring people together through the love of delicious, handcrafted pizza. We create moments of joy and community by using fresh, local ingredients and recipes made with care.</p>
+        <p>We aim to expand globally, introducing our unique flavors and customer-first philosophy to every community we serve. By blending tradition with innovation, we hope to set new standards in the pizza industry.</p>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>About Us</h2>
+      <div class="section-content">
+        <p>Founded with a passion for real flavor, Krif's Pizza Company blends traditional techniques and modern taste. Our dough is hand-tossed daily and we source quality toppings to deliver an unforgettable pizza experience.</p>
+        <p>We are committed to sustainability, using eco-friendly packaging and supporting local farmers. Our team believes that good food should not only taste amazing but also contribute positively to the environment and society.</p>
+      </div>
+    </section>
+
+    <section id="menu">
+      <h2>Our Menu</h2>
+      <div class="menu-grid">
+        <article class="menu-item">
+          <img src="Margherita-Pizza.webp">
+          <div class="mi-body">
+            <p>Margherita pizza</p><p>$7</p>
+            <button class="order-btn" data-pizza="Margherita">Order Now</button>
+          </div>
+        </article>
+
+        <article class="menu-item">
+          <img src="Easy-Pepperoni-Pizza-with-Hot-Honey-www.climbinggriermountain.com-1.jpg">
+          <div class="mi-body">
+            <p>Pepperoni pizza</p><p>$8</p>
+            <button class="order-btn" data-pizza="Pepperoni">Order Now</button>
+          </div>
+        </article>
+
+        <article class="menu-item">
+          <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=800&q=80" alt="Veggie pizza">
+          <div class="mi-body">
+            <p>Veggie Deluxe pizza</p><p>$7.5</p>
+           <button class="order-btn" data-pizza="Veggie Deluxe">Order Now</button>
+          </div>
+        </article>
+
+        <article class="menu-item">
+          <img src="BBQ-Chicken-Pizza-4.jpg">
+          <div class="mi-body">
+            <p>BBQ Chicken pizza</p><p>$10</p>
+            <button class="order-btn" data-pizza="BBQ Chicken">Order Now</button>
+          </div>
+        </article>
+
+        <article class="menu-item">
+          <img src="Hawaiian-Pizza-1-2.jpg">
+          <div class="mi-body">
+            <p>Hawaiian pizza</p><p>$7</p>
+            <button class="order-btn" data-pizza="Hawaiian">Order Now</button>
+          </div>
+        </article>
+
+        <article class="menu-item">
+          <img src="https://images.unsplash.com/photo-1586190848861-99aa4a171e90?auto=format&fit=crop&w=800&q=80" alt="Four cheese pizza">
+          <div class="mi-body">
+            <p>Four Cheese pizza</p><p>$8.5</p>
+            <button class="order-btn" data-pizza="Four Cheese">Order Now</button>
+          </div>
+        </article>
+
+        <article class="menu-item">
+          <img src="Ultimate-Stuffed-Meatlovers-Pizza-1.jpg">
+          <div class="mi-body">
+            <p>Meat Lovers pizza</p><p>$10</p>
+            <button class="order-btn" data-pizza="Meat Lovers">Order Now</button>
+          </div>
+        </article>
+
+        <article class="menu-item">
+          <img src="vegetarian-pizza.jpg">
+          <div class="mi-body">
+            <p>Spicy Veg pizza</p><p>$7</p>
+            <button class="order-btn" data-pizza="Spicy Veg">Order Now</button>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <section id="order">
+      <h2>Place Your Order</h2>
+      <div class="order-form">
+        <form id="order-form">
+          <label for="name">Full name</label>
+          <input id="name" name="name" type="text" required>
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required>
+
+          <label for="pizza">Pizza</label>
+          <input id="pizza" name="pizza" type="text" placeholder="Select from menu or type..." required>
+
+          <label for="qty">Quantity</label>
+          <input id="qty" name="qty" type="number" min="1" value="1" required>
+
+          <label for="notes">Address / notes</label>
+          <textarea id="notes" name="notes" rows="4"></textarea>
+
+          <button type="submit">Submit Order</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <div class="section-content contact-info">
+        <p>Email:krif014@gmail.com</p>
+        <p>Phone: +250 784414816</p>
+        <p>Address: Kigali, Rwanda</p>
+
+        <div class="social-icons" aria-label="social links">
+          <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="facebook"><i class="fab fa-facebook"></i></a>
+          <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="twitter"><i class="fab fa-twitter"></i></a>
+          <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://wa.me/1234567890" target="_blank" rel="noopener" aria-label="whatsapp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <small>© <span id="year">2025</span> Krif's Pizza Company. All rights reserved.</small>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    document.querySelectorAll('.order-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const pizza = btn.dataset.pizza || '';
+        document.getElementById('pizza').value = pizza;
+        document.getElementById('qty').focus();
+        document.getElementById('order').scrollIntoView({behavior:'smooth'});
+      });
+    });
+    document.getElementById('order-form').addEventListener('submit', function(e){
+      e.preventDefault();
+      const name=document.getElementById('name').value;
+      const pizza=document.getElementById('pizza').value;
+      const qty=document.getElementById('qty').value;
+      alert(`Thanks ${name}! Your order for ${qty} × ${pizza} has been received (front-end test).`);
+      this.reset();
+      window.scrollTo({top:0,behavior:'smooth'});
+    });
+  </script>
+</body>
+</html>
