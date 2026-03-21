@@ -24,10 +24,10 @@ Clean and modern UI design
 
 <p align="center">
   <a href="./Hero.png">
-  <img src="./Hero.png"  height="500"/>
+  <img src="./Hero.png" width="400" height="400"/>
   </a>  
   <a href="./Menu.png">
-  <img src="./Menu.png"  height="500"/>
+  <img src="./Menu.png" widht="400" height="400"/>
   </a>  
 </p>
 
