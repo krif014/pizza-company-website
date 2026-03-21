@@ -55,7 +55,7 @@ Font Awesome (for icons)
 
 Clone the repository:
 
-git clone https://github.com/your-username/your-repo-name.git
+git clone https://github.com/my-username/my-repo-name.git
 
 Open the project folder
 
