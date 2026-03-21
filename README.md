@@ -15,8 +15,10 @@ Clean and modern UI design
 
 📸 Preview
 
-![Website Preview1](./Screenshot 2026-03-21 094120.png)
-![Website Preview2](./Screenshot 2026-03-21 094148.png)
+<p align="center">
+  <img src="./Hero.png" width="45%" />
+  <img src="./Menu.png" width="45%" />
+</p>
 
 🛠️ Technologies Used
 
