@@ -15,8 +15,8 @@ Clean and modern UI design
 
 Add your website screenshot below 👇
 
-![Website Preview](./preview.png)
-
+![Website Preview1](./Screenshot 2026-03-21 094120.png)
+![Website Preview2](./Screenshot 2026-03-21 094148.png)
 Replace preview.png with your actual image file name
 
 🛠️ Technologies Used
