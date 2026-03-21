@@ -16,8 +16,8 @@ Clean and modern UI design
 📸 Preview
 
 <p align="center">
-  <img src="./Hero.png" width="45%" />
-  <img src="./Menu.png" width="45%" />
+  <img src="./Hero.png" width="45%" height="45%"/>
+  <img src="./Menu.png" width="45%" height="45%"/>
 </p>
 
 🛠️ Technologies Used
